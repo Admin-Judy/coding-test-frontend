@@ -1,14 +1,10 @@
 import React from 'react';
 
-const Problem = ({ description, htmlPreview }) => {
+const Problem = ({ description }) => {
   return (
     <div className="problem">
-      <h2>문제</h2>
+      <h2 className="text-xl font-semibold mb-2">문제 설명</h2>
       <p>{description}</p>
-      <div className="html-preview">
-        <h3>HTML 미리보기</h3>
-        <div dangerouslySetInnerHTML={{ __html: htmlPreview }} />
-      </div>
     </div>
   );
 };
